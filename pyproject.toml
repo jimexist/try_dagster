@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "try-dangster"
 version = "0.1.0"
-description = ""
+description = "try dagster"
 authors = ["Jiayu Liu <jiayu@hey.com>"]
 license = "MIT"
 readme = "README.md"
@@ -13,6 +13,8 @@ dagster-webserver = "^1.7.8"
 pandas = "^2.2.2"
 scikit-learn = "^1.5.0"
 
+requests = "^2.32.3"
+matplotlib = "^3.9.0"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.4.7"
 
@@ -22,3 +24,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 app = "try_dangster.cli:main"
+
+[tool.dagster]
+module_name = "try_dagster"
