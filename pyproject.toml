@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "try-dangster"
+version = "0.1.0"
+description = ""
+authors = ["Jiayu Liu <jiayu@hey.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+dagster = "^1.7.8"
+dagster-webserver = "^1.7.8"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+app = "try_dangster.cli:main"
